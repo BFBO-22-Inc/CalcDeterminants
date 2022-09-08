@@ -31,15 +31,18 @@ def oper(s,n):
         sun+=cds(s,0,q)*(-1)**(q)*(oper(BdInStr(local),n-1))
     return sun
 
-l = [msp(input())]                                  #ввод бд например
-n = len(l[0])                                       #1 2 3
-for q in range(n - 1):                              #4 5 6
-    l.append(msp(input()))                          #7 8 9
+print('Вводите определитель по строкам, через пробел')
+l = [msp(input('введите 1 строку определителя'))]               #ввод бд. например:
+n = len(l[0])                                                   #1 2 3
+for q in range(n - 1):                                          #4 5 6
+    l.append(msp(input('введите',q,'строку определителя')))     #7 8 9
 #print(l,BdInStr(l))                                 #пример ввода и шифрования
 #print(msl(BdInStr(l)),msp(msl(BdInStr(l))[0]))      #пример дешифрования
 print(oper(BdInStr(l),n))
 input('нажмите для завершения')
-#примеры
+
+
+#примеры для тестов
 '''
 2 -3 5
 1 0 -4
