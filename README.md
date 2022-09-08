@@ -1,1 +1,1 @@
-# CalcВeterminants-
+# CalcDeterminants-
